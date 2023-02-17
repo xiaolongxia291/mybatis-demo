@@ -1,0 +1,19 @@
+# 数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/page?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: wang1996526
+
+# MyBatis-Plus的设置
+# 别名包扫描路径,为路径下的所有类创建别名
+mybatis-plus:
+  type-aliases-package: com.tracy.mybatisdemo.entity
+  # xml扫描路径。然后在Mapper接口写上自定义方法并关联XML语句，即可实现手写SQL
+  mapper-locations: classpath*:mapper/*.xml
+  # MyBatis-Plus驼峰转换，配置后不论手写SQL还是接口方法，都能自动映射（默认on）
+  configuration:
+    map-underscore-to-camel-case: on
+  # 配置生成SQL日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
