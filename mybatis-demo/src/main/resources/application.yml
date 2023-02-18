@@ -4,7 +4,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/page?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     username: root
-    password: wang1996526
+    password: 密码
 
 # MyBatis-Plus的设置
 # 别名包扫描路径,为路径下的所有类创建别名
